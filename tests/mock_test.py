@@ -19,7 +19,7 @@ def production():
     return m
 
 class TestStringMethods(unittest.TestCase):
-    @patch('mock.Point3D')
+    @patch('mock_test.Point3D')
     def test(self, mockclass):
         instance = mockclass.return_value
         instance.m.return_value = 1999
