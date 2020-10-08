@@ -1,6 +1,7 @@
 from unittest.mock import patch
 import attr
 
+
 @attr.s
 class Point3D(object):
     x = attr.ib()
@@ -10,11 +11,13 @@ class Point3D(object):
     def m(self):
         return self.x + self.y + self.y
 
+
 def test():
     p = Point3D(1, 2, 3)
     m = p.m()
     print("test.m=", m)
     return m
+
 
 def mocked():
     print("start")
@@ -27,7 +30,7 @@ def mocked():
 
 
 def __main__():
-    #print("test=", test())
+    # print("test=", test())
     print("XX start")
     mocked()
     print("XX exit")

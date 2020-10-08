@@ -7,6 +7,7 @@ def flatten(ls):
         else:
             yield item
 
+
 def flatten2(lol):
     for item in lol:
         print("item", item)
@@ -15,6 +16,5 @@ def flatten2(lol):
         else:
             yield item
 
-lol = [1, 2, [3,4,5], [6,[7,8,9], []]]
 
-
+lol = [1, 2, [3, 4, 5], [6, [7, 8, 9], []]]

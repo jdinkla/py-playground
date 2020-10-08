@@ -6,7 +6,8 @@ def f(** args):
     else:
         print("No a")
 
+
 f(a="c", b="b")
 
-f(c="c")
 
+f(c="c")
