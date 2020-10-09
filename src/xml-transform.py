@@ -1,10 +1,9 @@
 import xml.etree.ElementTree as ET
 
-tree = ET.parse('data/regression.xml')
+tree = ET.parse('data/plants.xml')
 root = tree.getroot()
 
-for comp in root.find('Components').findall('Component'):
-    print(comp.get('name'))
+print(root.tag)
 
-    for vcar in comp.findall('Modules/Module/Tests/VCars/VCar'):
-        print("  " + str(vcar.get('file')))
+for plant in root.findall('PLANT'):
+    print(plant.tag, plant.find('COMMON').text)

@@ -34,3 +34,6 @@ def __main__():
     print("XX start")
     mocked()
     print("XX exit")
+
+
+__main__()

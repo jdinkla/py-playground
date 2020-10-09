@@ -11,5 +11,6 @@ def tile(i):
     return chr(int(hex, 16))
 
 
-def mahjong_tiles():
-    return [tile(i) for i in range(0, 44)]
+mahjong_tiles = [tile(i) for i in range(0, 44)]
+
+print(mahjong_tiles)

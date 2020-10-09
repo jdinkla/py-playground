@@ -18,3 +18,6 @@ def gen2(n):
 
 
 g24 = gen2(4)
+
+
+print(g24)
