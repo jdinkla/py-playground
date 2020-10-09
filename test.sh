@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd tests
-../dev3.8/bin/python -m unittest mock.py
+python -m unittest mock_test.py

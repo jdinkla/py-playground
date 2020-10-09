@@ -1,6 +1,7 @@
 #!/bin/sh
 
-python3.8 -m venv dev3.8/
-source dev3.8/bin/activate
+ENV=pythonenv3.8
+python3.8 -m venv ${ENV}
+source ${ENV}/bin/activate
 
 pip install -r requirements.txt
