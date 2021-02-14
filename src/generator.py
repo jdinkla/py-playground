@@ -9,8 +9,7 @@ def gen(n):
 
 
 g4 = gen(4)
-
-# lg4 = list(g4)
+print(*g4)
 
 
 def gen2(n):
@@ -18,6 +17,4 @@ def gen2(n):
 
 
 g24 = gen2(4)
-
-
 print(g24)

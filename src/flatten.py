@@ -10,7 +10,7 @@ def flatten(ls):
 
 def flatten2(lol):
     for item in lol:
-        print("item", item)
+        print("item2", item)
         if isinstance(item, list):
             yield from flatten2(item)
         else:
@@ -18,3 +18,6 @@ def flatten2(lol):
 
 
 lol = [1, 2, [3, 4, 5], [6, [7, 8, 9], []]]
+
+print(*flatten(lol))
+print(*flatten2(lol))
